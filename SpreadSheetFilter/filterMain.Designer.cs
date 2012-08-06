@@ -79,6 +79,7 @@
             this.outputText.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.outputText.Size = new System.Drawing.Size(450, 153);
             this.outputText.TabIndex = 4;
+            this.outputText.TextChanged += new System.EventHandler(this.outputText_TextChanged);
             // 
             // openFileButton
             // 
