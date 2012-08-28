@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.IO;
 
 namespace SpreadSheetFilter
 {
@@ -45,7 +46,7 @@ namespace SpreadSheetFilter
             paths.testFile();
             if (paths.fileSuccess == true)
             {
-                outputText.Text = "";
+                
                 string[] source = System.IO.File.ReadAllLines(paths.getSource());
                 int termIndex = 0;
                 foreach (var item in termList.Items)
@@ -87,7 +88,7 @@ namespace SpreadSheetFilter
                     }//end foreach
                     if (regSuccess > 0)
                     {
-                        outputText.AppendText(source[sIndex] + "\n");
+                        parseBox.Items.Add(source[sIndex]);
                     }
                     sIndex++;
                 }//Foreach done
@@ -107,6 +108,36 @@ namespace SpreadSheetFilter
         private void outputText_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void clearAll_Click(object sender, EventArgs e)
+        {
+            parseBox.Items.Clear();
+        }
+
+        private void removeRecord_Click(object sender, EventArgs e)
+        {
+            //parseBox.Items.Remove(
+        }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.ShowDialog();
+                        
+            int parsedIndex = 0;
+            foreach (var item in parseBox.Items)
+            {
+                parsedIndex++;
+            }//END FOREACH
+            string[] output = new string[parsedIndex];
+            parsedIndex = 0;
+            foreach (var item in parseBox.Items)
+            {
+                output[parsedIndex] = item.ToString();
+                parsedIndex++;
+            }//END FOREACH
+
+            File.WriteAllLines(saveFileDialog1.FileName, output, Encoding.Default);
         }
     }
 }

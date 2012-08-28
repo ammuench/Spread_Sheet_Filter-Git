@@ -32,13 +32,16 @@
             this.openText = new System.Windows.Forms.TextBox();
             this.newTermBox = new System.Windows.Forms.TextBox();
             this.termList = new System.Windows.Forms.ComboBox();
-            this.outputText = new System.Windows.Forms.TextBox();
             this.openFileButton = new System.Windows.Forms.Button();
             this.addTermButton = new System.Windows.Forms.Button();
             this.removeTermButton = new System.Windows.Forms.Button();
             this.filterButton = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.removeRecord = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.parseBox = new System.Windows.Forms.ListBox();
+            this.clearAll = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // termBox
@@ -53,6 +56,7 @@
             // 
             this.openText.Location = new System.Drawing.Point(12, 12);
             this.openText.Name = "openText";
+            this.openText.ReadOnly = true;
             this.openText.Size = new System.Drawing.Size(231, 20);
             this.openText.TabIndex = 1;
             // 
@@ -70,17 +74,6 @@
             this.termList.Name = "termList";
             this.termList.Size = new System.Drawing.Size(231, 21);
             this.termList.TabIndex = 3;
-            // 
-            // outputText
-            // 
-            this.outputText.Location = new System.Drawing.Point(12, 130);
-            this.outputText.Multiline = true;
-            this.outputText.Name = "outputText";
-            this.outputText.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.outputText.Size = new System.Drawing.Size(450, 153);
-            this.outputText.TabIndex = 4;
-            this.outputText.WordWrap = false;
-            this.outputText.TextChanged += new System.EventHandler(this.outputText_TextChanged);
             // 
             // openFileButton
             // 
@@ -126,16 +119,62 @@
             // 
             this.openFileDialog1.Filter = "CSV (Comma Separated Values)|.*csv|Text Files|.*txt";
             // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.DefaultExt = "csv";
+            // 
+            // removeRecord
+            // 
+            this.removeRecord.Location = new System.Drawing.Point(210, 289);
+            this.removeRecord.Name = "removeRecord";
+            this.removeRecord.Size = new System.Drawing.Size(126, 28);
+            this.removeRecord.TabIndex = 9;
+            this.removeRecord.Text = "Remove Row(s)";
+            this.removeRecord.UseVisualStyleBackColor = true;
+            this.removeRecord.Click += new System.EventHandler(this.removeRecord_Click);
+            // 
+            // saveButton
+            // 
+            this.saveButton.Location = new System.Drawing.Point(342, 289);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(120, 28);
+            this.saveButton.TabIndex = 10;
+            this.saveButton.Text = "Save Output";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
+            // parseBox
+            // 
+            this.parseBox.FormattingEnabled = true;
+            this.parseBox.HorizontalScrollbar = true;
+            this.parseBox.Location = new System.Drawing.Point(12, 126);
+            this.parseBox.Name = "parseBox";
+            this.parseBox.Size = new System.Drawing.Size(450, 160);
+            this.parseBox.TabIndex = 11;
+            // 
+            // clearAll
+            // 
+            this.clearAll.Location = new System.Drawing.Point(78, 289);
+            this.clearAll.Name = "clearAll";
+            this.clearAll.Size = new System.Drawing.Size(126, 28);
+            this.clearAll.TabIndex = 12;
+            this.clearAll.Text = "Clear Output";
+            this.clearAll.UseVisualStyleBackColor = true;
+            this.clearAll.Click += new System.EventHandler(this.clearAll_Click);
+            // 
             // filterMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 291);
+            this.ClientSize = new System.Drawing.Size(474, 321);
+            this.Controls.Add(this.clearAll);
+            this.Controls.Add(this.parseBox);
+            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.removeRecord);
             this.Controls.Add(this.filterButton);
             this.Controls.Add(this.removeTermButton);
             this.Controls.Add(this.addTermButton);
             this.Controls.Add(this.openFileButton);
-            this.Controls.Add(this.outputText);
             this.Controls.Add(this.termList);
             this.Controls.Add(this.newTermBox);
             this.Controls.Add(this.openText);
@@ -153,13 +192,16 @@
         private System.Windows.Forms.TextBox openText;
         private System.Windows.Forms.TextBox newTermBox;
         private System.Windows.Forms.ComboBox termList;
-        private System.Windows.Forms.TextBox outputText;
         private System.Windows.Forms.Button openFileButton;
         private System.Windows.Forms.Button addTermButton;
         private System.Windows.Forms.Button removeTermButton;
         private System.Windows.Forms.Button filterButton;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Button removeRecord;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.ListBox parseBox;
+        private System.Windows.Forms.Button clearAll;
     }
 }
 
