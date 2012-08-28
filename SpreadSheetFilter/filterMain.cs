@@ -63,6 +63,8 @@ namespace SpreadSheetFilter
                 int regIndex = 0;
 
                 //outputText.Text = "arrays made\n";
+                
+                //begin filtering CSV
                 foreach (string s in source)
                 {
                     regIndex = 0;

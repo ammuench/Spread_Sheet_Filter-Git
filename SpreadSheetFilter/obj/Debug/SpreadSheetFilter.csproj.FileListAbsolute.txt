@@ -13,3 +13,12 @@ D:\Documents\Visual Studio 2012\Projects\Spreadsheet Filter - Git\Spread_Sheet_F
 D:\Documents\Visual Studio 2012\Projects\Spreadsheet Filter - Git\Spread_Sheet_Filter-Git\SpreadSheetFilter\obj\Debug\SpreadSheetFilter.csproj.GenerateResource.Cache
 D:\Documents\Visual Studio 2012\Projects\Spreadsheet Filter - Git\Spread_Sheet_Filter-Git\SpreadSheetFilter\bin\Debug\SpreadSheetFilter.exe
 D:\Documents\Visual Studio 2012\Projects\Spreadsheet Filter - Git\Spread_Sheet_Filter-Git\SpreadSheetFilter\bin\Debug\SpreadSheetFilter.pdb
+C:\Users\amuench\Documents\GitHub\Spread_Sheet_Filter-Git\SpreadSheetFilter\obj\Debug\SpreadSheetFilter.exe
+C:\Users\amuench\Documents\GitHub\Spread_Sheet_Filter-Git\SpreadSheetFilter\obj\Debug\SpreadSheetFilter.pdb
+C:\Users\amuench\Documents\GitHub\Spread_Sheet_Filter-Git\SpreadSheetFilter\bin\Debug\SpreadSheetFilter.exe
+C:\Users\amuench\Documents\GitHub\Spread_Sheet_Filter-Git\SpreadSheetFilter\bin\Debug\SpreadSheetFilter.pdb
+C:\Users\amuench\Documents\GitHub\Spread_Sheet_Filter-Git\SpreadSheetFilter\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\amuench\Documents\GitHub\Spread_Sheet_Filter-Git\SpreadSheetFilter\obj\Debug\SpreadSheetFilter.filterMain.resources
+C:\Users\amuench\Documents\GitHub\Spread_Sheet_Filter-Git\SpreadSheetFilter\obj\Debug\SpreadSheetFilter.Properties.Resources.resources
+C:\Users\amuench\Documents\GitHub\Spread_Sheet_Filter-Git\SpreadSheetFilter\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\amuench\Documents\GitHub\Spread_Sheet_Filter-Git\SpreadSheetFilter\obj\Debug\GenerateResource.write.1.tlog

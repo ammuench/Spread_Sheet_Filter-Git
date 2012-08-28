@@ -79,6 +79,7 @@
             this.outputText.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.outputText.Size = new System.Drawing.Size(450, 153);
             this.outputText.TabIndex = 4;
+            this.outputText.WordWrap = false;
             this.outputText.TextChanged += new System.EventHandler(this.outputText_TextChanged);
             // 
             // openFileButton
@@ -129,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 295);
+            this.ClientSize = new System.Drawing.Size(474, 291);
             this.Controls.Add(this.filterButton);
             this.Controls.Add(this.removeTermButton);
             this.Controls.Add(this.addTermButton);
